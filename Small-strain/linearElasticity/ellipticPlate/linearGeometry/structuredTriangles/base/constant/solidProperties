@@ -38,6 +38,14 @@ solidModel     linearGeometry;
 
     // Write frequency for the residuals
     infoFrequency   100;
+
+    // Optional: change stabilisation
+    // stabilisation
+    // {
+    //     // Default stabilisation
+    //     type        RhieChow;
+    //     scaleFactor 0.1;
+    // }
 }
 
 // ************************************************************************* //
