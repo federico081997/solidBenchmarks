@@ -6,8 +6,7 @@
 # Source solids4Foam scripts
 source solids4FoamScripts.sh
 
-SUFFIX="vertex"
-
+SUFFIX="linearGeometry"
 BASE="base"
 
 if [[ -d "${SUFFIX}.1" ]]
@@ -47,5 +46,5 @@ do
 done
 
 # Extract the results
-echo "Running Allpost"
-./Allpost
+# echo "Running Allpost"
+# ./Allpost

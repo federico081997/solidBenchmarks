@@ -6,7 +6,7 @@
 # Source solids4Foam scripts
 source solids4FoamScripts.sh
 
-SUFFIX="vertex"
+SUFFIX="linearGeometry"
 BASE="base"
 
 #Remove case folders
