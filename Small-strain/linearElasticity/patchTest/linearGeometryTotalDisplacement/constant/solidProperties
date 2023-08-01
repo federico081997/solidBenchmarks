@@ -11,32 +11,32 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    object      DD;
+    class       dictionary;
+    location    "constant";
+    object      solidProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 0 0 0 0 0];
+// linearGeometry: assumes small strains and rotations
+solidModel     linearGeometryTotalDisplacement;
+//solidModel     unsLinearGeometry;
 
-internalField   uniform (0 0 0);
-
-boundaryField
+"linearGeometryTotalDisplacementCoeffs|linearGeometryTotalDisplacementCoeffs|unsLinearGeometryCoeffs"
 {
-    boundary
-    {
-        type            linearSpatialDisplacement;
-        a               (1e-6 4e-6 0);
-        b               (
-                            2e-6 3e-6 0
-                            5e-6 6e-6 0
-                            0 0 0
-                        );
-        value           uniform (0 0 0);
-    }
-    defaultFaces
-    {
-        type            empty;
-    }
+    // Maximum number of momentum correctors
+    nCorrectors     1000;
+
+    // Solution tolerance for displacement
+    solutionTolerance 1e-14;
+
+    // Alternative solution tolerance for displacement
+    alternativeTolerance 1e-14;
+
+    // Material law solution tolerance
+    materialTolerance 1e-14;
+
+    // Write frequency for the residuals
+    infoFrequency   100;
 }
 
 // ************************************************************************* //

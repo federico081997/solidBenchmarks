@@ -11,31 +11,37 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    object      DD;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 0 0 0 0 0];
-
-internalField   uniform (0 0 0);
-
-boundaryField
+solvers
 {
-    boundary
+    D
     {
-        type            linearSpatialDisplacement;
-        a               (1e-6 4e-6 0);
-        b               (
-                            2e-6 3e-6 0
-                            5e-6 6e-6 0
-                            0 0 0
-                        );
-        value           uniform (0 0 0);
+        solver          PCG;
+        preconditioner  FDIC;
+        tolerance       1e-15;
+        relTol          0.1;
     }
-    defaultFaces
+}
+
+relaxationFactors
+{
+    // Under-relaxating the D equation by 0.99-0.9999 can improve convergence in
+    // some cases, in particular when there are solidContact boundaries
+    equations
     {
-        type            empty;
+        //D    0.999;
+    }
+
+    // Under-relaxating the D field by 0.1-0.9 can improve convergence in some
+    // cases
+    fields
+    {
+        //D       0.7;
     }
 }
 

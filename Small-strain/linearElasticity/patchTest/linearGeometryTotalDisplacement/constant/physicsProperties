@@ -11,32 +11,14 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    object      DD;
+    class       dictionary;
+    location    "constant";
+    object      physicsProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 0 0 0 0 0];
-
-internalField   uniform (0 0 0);
-
-boundaryField
-{
-    boundary
-    {
-        type            linearSpatialDisplacement;
-        a               (1e-6 4e-6 0);
-        b               (
-                            2e-6 3e-6 0
-                            5e-6 6e-6 0
-                            0 0 0
-                        );
-        value           uniform (0 0 0);
-    }
-    defaultFaces
-    {
-        type            empty;
-    }
-}
+// type    fluid;
+type    solid;
+// type    fluidSolidInteraction;
 
 // ************************************************************************* //

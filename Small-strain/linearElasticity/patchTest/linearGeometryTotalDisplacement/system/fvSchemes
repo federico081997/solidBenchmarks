@@ -11,32 +11,51 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    object      DD;
+    class       dictionary;
+    object      fvSchemes;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 0 0 0 0 0];
-
-internalField   uniform (0 0 0);
-
-boundaryField
+d2dt2Schemes
 {
-    boundary
-    {
-        type            linearSpatialDisplacement;
-        a               (1e-6 4e-6 0);
-        b               (
-                            2e-6 3e-6 0
-                            5e-6 6e-6 0
-                            0 0 0
-                        );
-        value           uniform (0 0 0);
-    }
-    defaultFaces
-    {
-        type            empty;
-    }
+    default            steadyState;
+}
+
+ddtSchemes
+{
+    default            steadyState;
+}
+
+gradSchemes
+{
+    default            leastSquares;
+}
+
+divSchemes
+{
+    default            Gauss linear;
+}
+
+laplacianSchemes
+{
+    default            none;
+    laplacian(DD,D)    Gauss linear corrected;
+    laplacian(DDD,DD)  Gauss linear corrected;
+}
+
+snGradSchemes
+{
+    default            none;
+    snGrad(D)          corrected;
+    snGrad(DD)         corrected;
+}
+
+interpolationSchemes
+{
+    default            none;
+    interpolate(impK)  linear;
+    interpolate(grad(D)) linear;
+    interpolate(grad(laplacian(interpolate(impK),D))) linear;
 }
 
 // ************************************************************************* //
