@@ -1,0 +1,96 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary
+Date   : Aug 22 2023
+Time   : 14:58:55
+Host   : DESKTOP-19FOE2K
+PID    : 21302
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/linearElasticity/cubeMMS/vertexCentredLinearGeometry/structuredQuadrilaterals/vertex.5
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Create mesh for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 6(bottom left front right back top)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 2(defaultFaces boundary)
+--> FOAM Warning : 
+    From bool merge(bool, Foam::dictionary&, const Foam::dictionary&, bool, const Foam::HashTable<Foam::List<Foam::word> >&)
+    in file changeDictionary.C at line 304
+    Reading "/home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/linearElasticity/cubeMMS/vertexCentredLinearGeometry/structuredQuadrilaterals/vertex.5/system/changeDictionaryDict.boundary" at line 21 to 28
+    Ignoring non-existing entry defaultFaces
+--> FOAM Warning : 
+    From bool merge(bool, Foam::dictionary&, const Foam::dictionary&, bool, const Foam::HashTable<Foam::List<Foam::word> >&)
+    in file changeDictionary.C at line 304
+    Reading "/home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/linearElasticity/cubeMMS/vertexCentredLinearGeometry/structuredQuadrilaterals/vertex.5/system/changeDictionaryDict.boundary" at line 21 to 28
+    Ignoring non-existing entry boundary
+fieldDict:
+{
+    bottom
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       774144;
+    }
+    left
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       778240;
+    }
+    front
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       782336;
+    }
+    right
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       786432;
+    }
+    back
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       790528;
+    }
+    top
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4096;
+        startFace       794624;
+    }
+}
+
+Writing modified boundary
+
+End
+

@@ -29,7 +29,7 @@ solidModel     vertexCentredLinearGeometry;
     nCorrectors     100;
 
     // Tolerance for Newton-Raphson loop
-    solutionTolerance 1e-6;
+    solutionTolerance 1e-9;
 
     // Write linear system to matlab compatible format
     writeMatlabMatrix yes;

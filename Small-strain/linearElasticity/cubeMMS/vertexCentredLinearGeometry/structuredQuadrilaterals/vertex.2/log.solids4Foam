@@ -1,0 +1,1370 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Aug 22 2023
+Time   : 14:48:52
+Host   : DESKTOP-19FOE2K
+PID    : 21067
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/linearElasticity/cubeMMS/vertexCentredLinearGeometry/structuredQuadrilaterals/vertex.2
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel vertexCentredLinearGeometryMMS
+Selecting dynamicFvMesh staticFvMesh
+    under-relaxation method: fixed
+Creating dualMesh
+    featureAngle: 30
+    doNotPreserveFaceZones: 0
+    concaveMultiCells: 0
+Creating the mechanicalModel
+Selecting mechanical law linearElastic
+Creating the dualMechanicalModel
+Selecting mechanical law linearElastic
+fixedDofScale: 1
+Time = 1
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Initial residual = 7.40914e+08
+    Iter = 0, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 4016.63
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 1, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 8033.26
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 2, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 12049.9
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 3, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 16066.5
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 4, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 20083.1
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 5, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 24099.8
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 6, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 28116.4
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 7, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 32133
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 8, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 36149.7
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 9, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 40166.3
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 10, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 44182.9
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 11, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 48199.5
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 12, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 52216.2
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 13, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 56232.8
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 14, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 60249.4
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 15, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 64266.1
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 16, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 68282.7
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 17, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 72299.3
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 18, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 76315.9
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 19, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 80332.6
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 20, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 84349.2
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 21, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 88365.8
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 22, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 92382.5
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 23, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 96399.1
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 24, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 100416
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 25, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 104432
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 26, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 108449
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 27, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 112466
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 28, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 116482
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 29, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 120499
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 30, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 124515
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 31, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 128532
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 32, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 132549
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 33, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 136565
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 34, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 140582
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 35, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 144599
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 36, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 148615
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 37, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 152632
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 38, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 156649
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 39, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 160665
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 40, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 164682
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 41, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 168698
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 42, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 172715
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 43, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 176732
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 44, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 180748
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 45, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 184765
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 46, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 188782
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 47, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 192798
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 48, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 196815
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 49, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 200831
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 50, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 204848
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 51, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 208865
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 52, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 212881
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 53, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 216898
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 54, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 220915
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 55, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 224931
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 56, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 228948
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 57, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 232964
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 58, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 236981
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 59, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 240998
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 60, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 245014
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 61, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 249031
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 62, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 253048
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 63, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 257064
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 64, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 261081
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 65, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 265097
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 66, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 269114
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 67, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 273131
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 68, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 277147
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 69, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 281164
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 70, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 285181
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 71, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 289197
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 72, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 293214
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 73, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 297231
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 74, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 301247
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 75, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 305264
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 76, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 309280
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 77, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 313297
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 78, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 317314
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 79, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 321330
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 80, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 325347
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 81, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 329364
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 82, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 333380
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 83, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 337397
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 84, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 341413
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 85, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 345430
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 86, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 349447
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 87, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 353463
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 88, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 357480
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 89, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 361497
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 90, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 365513
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 91, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 369530
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 92, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 373546
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 93, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 377563
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 94, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 381580
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 95, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 385596
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 96, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 389613
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 97, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 393630
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 98, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 397646
+    Solving
+  0 KSP Residual norm 26040.6 
+  1 KSP Residual norm 1762.41 
+  2 KSP Residual norm 119.64 
+  3 KSP Residual norm 7.21759 
+  4 KSP Residual norm 0.405996 
+  5 KSP Residual norm 0.0185971 
+  6 KSP Residual norm 0.00125943 
+  7 KSP Residual norm 9.59983e-05 
+  8 KSP Residual norm 4.69633e-06 
+  9 KSP Residual norm 2.4706e-07 
+ 10 KSP Residual norm 1.5389e-08 
+    Iter = 99, relRef = 1, res = 27219.7, resAbs = 7.40914e+08, nIters = 10, maxD = 401663
+--> FOAM Warning : Max iterations reached within the momentum Newton-Raphson loop
+Max pEpsilonEq = 1.46914e+06
+Max epsilonEq = 2.02678e+06
+Max sigmaEq (von Mises stress) = 4.67719e+17
+ExecutionTime = 4.64 s  ClockTime = 6 s
+
+The momentum equation converged in all time-steps
+
+
+End
+
