@@ -25,37 +25,37 @@ boundaryField
     right
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 
     top
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 
     bottom
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 
     left
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 
     back
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 
     front
     {
         type            uniformFixedValue;
-        uniformValue    (0 0 0);
+	uniformValue    (0 0 0);
     }
 }
 

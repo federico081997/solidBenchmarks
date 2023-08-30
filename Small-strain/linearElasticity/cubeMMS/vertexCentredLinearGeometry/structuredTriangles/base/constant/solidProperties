@@ -20,9 +20,9 @@ FoamFile
 // linearGeometry: assumes small strains and rotations
 // solidModel     linearGeometryTotalDisplacement;
 //solidModel     unsLinearGeometry;
-solidModel     vertexCentredLinearGeometry;
+solidModel     vertexCentredLinearGeometryMMS;
 
-"vertexCentredLinearGeometryCoeffs|linearGeometryTotalDisplacementCoeffs|linearGeometryTotalDisplacementCoeffs|unsLinearGeometryCoeffs"
+"vertexCentredLinearGeometryMMSCoeffs|linearGeometryTotalDisplacementCoeffs|linearGeometryTotalDisplacementCoeffs|unsLinearGeometryCoeffs"
 {
     // Update the stiffness matrix every outer iteration
     fullNewton yes;
