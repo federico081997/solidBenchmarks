@@ -46,4 +46,19 @@ timePrecision   6;
 
 runTimeModifiable no;
 
+functions
+{
+    MMSCubeAnalytical
+    {
+        type MMSCubeAnalyticalSolution;
+        E 200e9;
+        nu 0.3;
+	ax 2;
+	ay 4;
+	az 6;
+        pointDisplacement yes;
+        pointStress yes;
+    }
+}
+
 // ************************************************************************* //
