@@ -29,8 +29,8 @@ do
 
     # Set the mesh spacing
     #DX=$(echo "scale=10; sqrt(2.0*2.0 - 0.25*3.1415926536*0.5*0.5)/(sqrt(4^($i-1))*250)" | bc)
-    DX=$(echo "scale=10; 0.5/(2^(${i}-1))" | bc)
-    sed -i "s/dx = 0.5;/dx = ${DX};/g" cube.geo
+    DX=$(echo "scale=10; 0.23/(2^(${i}-1))" | bc)
+    sed -i "s/dx = 0.23;/dx = ${DX};/g" cube.geo
     sed -i "s/cn = 1;/cn = 2^(${i}+1);/g" cube.geo
 
     # Create the mesh

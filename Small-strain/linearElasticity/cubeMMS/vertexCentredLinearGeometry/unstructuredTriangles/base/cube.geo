@@ -1,5 +1,5 @@
 // Average mesh spacing
-dx = 0.5;
+dx = 0.23;
 
 // Bounding box width
 L = 1; 

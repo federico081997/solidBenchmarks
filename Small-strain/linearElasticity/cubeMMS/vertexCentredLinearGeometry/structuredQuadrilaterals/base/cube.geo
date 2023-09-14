@@ -5,7 +5,7 @@ dx = 0.02;
 L = 1; 
 
 //Cell multiplier
-cn = 1;
+cn = 2;
 
 // Points
 Point(1) = {0, 0, 0, dx};

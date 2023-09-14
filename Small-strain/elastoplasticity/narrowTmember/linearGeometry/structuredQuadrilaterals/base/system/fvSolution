@@ -41,7 +41,7 @@ relaxationFactors
     // cases
     fields
     {
-        //"D|DD"       0.5;
+        //"D|DD"       0.8;
     }
 }
 

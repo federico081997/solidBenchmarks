@@ -26,6 +26,7 @@ boundary
     //    type empty;
     //    physicalType empty;
     //}
+
     symmx
     {
        type symmetry;
@@ -36,11 +37,12 @@ boundary
         type symmetry;
         physicalType symmetry;
     }
-    //down
-    //{
-    //    type patch;
-    //    physicalType patch;
-    //}
+    front
+    {
+        type patch;
+        physicalType patch;
+    }
+
     //left
     //{
     //    type patch;

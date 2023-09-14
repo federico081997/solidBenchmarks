@@ -136,7 +136,7 @@ Transfinite Curve {9, 16, 17, 19, 10, 29, 31} = cn+1 Using Progression 1;
 Transfinite Surface {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
 //Recombine surface to get quadrilaterals
-Recombine Surface {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+//Recombine Surface {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
 // Create volume by extrusion
 Extrude {0, 0, d} {
@@ -144,7 +144,7 @@ Extrude {0, 0, d} {
   Surface{6}; Surface{7}; Surface{8}; Surface{9}; Surface{10};
   Surface{11}; Surface{12}; Surface{13}; Surface{14};
   Layers{cn*2};
-  Recombine;
+  //Recombine;
 }
 
 Physical Surface("loading") = {213};

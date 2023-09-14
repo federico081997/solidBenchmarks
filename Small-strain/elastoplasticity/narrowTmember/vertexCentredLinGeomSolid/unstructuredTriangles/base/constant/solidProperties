@@ -26,7 +26,7 @@ solidModel     vertexCentredLinearGeometry;
     fullNewton yes;
 
     // Maximum number of Newton-Raphson iterations
-    nCorrectors     100;
+    nCorrectors     100000;
 
     // Tolerance for Newton-Raphson loop
     solutionTolerance 1e-9;
