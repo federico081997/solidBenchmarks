@@ -26,13 +26,13 @@ solidModel     vertexCentredLinearGeometry;
     fullNewton yes;
 
     // Maximum number of Newton-Raphson iterations
-    nCorrectors     100000;
+    nCorrectors     200;
 
     // Tolerance for Newton-Raphson loop
-    solutionTolerance 1e-6;
+    solutionTolerance 1e-10;
 
     // Write linear system to matlab compatible format
-    writeMatlabMatrix yes;
+    //writeMatlabMatrix yes;
 
     // Scaling of fixed DOF equations
     //fixedDofScale 1;
