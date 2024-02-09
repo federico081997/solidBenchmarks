@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      solidProperties.withDefaultValues;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solidModel      vertexCentredSegregatedLinearGeometry;
+
+vertexCentredSegregatedLinearGeometryCoeffs
+{
+    nCorrectors     300;
+    zeta            0;
+    solutionTolerance 1e-06;
+    writeMatlabMatrix no;
+    dampingCoeff    dampingCoeff [ 0 0 -1 0 0 0 0 ] 0;
+    alternativeTolerance 1e-07;
+    materialTolerance 1e-05;
+    infoFrequency   100;
+    minCorrectors   1;
+    writeResidualField false;
+    relaxationMethod fixed;
+    QuasiNewtonRestartFrequency 25;
+    restart         false;
+    residualFile    false;
+    stabilisation
+    {
+        type            RhieChow;
+        scaleFactor     0.1;
+    }
+}
+
+
+// ************************************************************************* //
