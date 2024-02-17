@@ -16,6 +16,8 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+libs            ("libcubeMMS.so");
+
 application     solids4Foam;
 
 startFrom       startTime;
