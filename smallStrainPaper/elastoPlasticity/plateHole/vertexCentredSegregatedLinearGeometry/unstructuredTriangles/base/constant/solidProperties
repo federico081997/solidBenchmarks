@@ -12,55 +12,37 @@ FoamFile
     version     2.0;
     format      ascii;
     class       dictionary;
-    object      controlDict;
+    location    "constant";
+    object      solidProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-libs            ("libcubeMMS.so");
+solidModel     vertexCentredSegregatedLinearGeometry;
 
-application     solids4Foam;
-
-startFrom       startTime;
-
-startTime       0;
-
-stopAt          endTime;
-
-endTime         1;
-
-deltaT          1;
-
-writeControl    timeStep;
-
-writeInterval   1;
-
-cycleWrite      0;
-
-writeFormat     ascii;
-
-writePrecision  6;
-
-writeCompression uncompressed;
-
-timeFormat      general;
-
-timePrecision   6;
-
-runTimeModifiable no;
-
-functions
+vertexCentredSegregatedLinearGeometryCoeffs
 {
-    MMSCubeAnalytical
-    {
-        type MMSCubeAnalyticalSolution;
-        E 200e9;
-        nu 0.3;
-	ax 2;
-	ay 4;
-	az 6;
-        pointDisplacement yes;
-        pointStress yes;
-    }
+    // Maximum number of Newton-Raphson iterations
+    // Set to 1 for linear cases, otherwise the solver may perform a second
+    // iteration
+    nCorrectors     300;
+
+    // Compact edge discretisation fraction
+    zeta            0.0;
+
+    // Tolerance for Newton-Raphson loop
+    // This obviouosly has no effect if nCorrectors is set to 1
+    solutionTolerance 1e-6;
+
+    // Write Eigen matrix to disk in Matlab format
+    writeMatlabMatrix no;
+
+    // Scaling of fixed DOF equations
+    //fixedDofScale 1;
+
+    // Fraction of compact edge direction gradient used
+    // Must be greater than 0.0 for stability
+    // alpha 0.2;
 }
+
 
 // ************************************************************************* //
