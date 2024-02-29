@@ -1,7 +1,0 @@
-solidModels/linGeomSolidMMS/linGeomSolidMMS.C
-solidModels/unsLinGeomSolidMMS/unsLinGeomSolidMMS.C
-solidModels/vertexCentredLinGeomSolidMMS/vertexCentredLinGeomSolidMMS.C
-
-functionObjects/MMSCubeAnalyticalSolution/MMSCubeAnalyticalSolution.C
-
-LIB = $(FOAM_MODULE_LIBBIN)/libcubeMMS
