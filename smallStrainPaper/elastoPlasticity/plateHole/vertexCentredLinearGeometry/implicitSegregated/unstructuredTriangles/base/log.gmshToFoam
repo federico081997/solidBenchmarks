@@ -1,0 +1,94 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 177176c5ff-20210208 OPENFOAM=2012 patch=220610
+Arch   : "LSB;label=32;scalar=64"
+Exec   : gmshToFoam plateHole.msh
+Date   : Feb 10 2024
+Time   : 21:57:42
+Host   : Philips-MBP.station
+PID    : 9536
+I/O    : uncollated
+Case   : /Users/philipc/code/federico/solidBenchmarks/smallStrainPaper/elastoPlasticity/plateHole/vertexCentredSegregatedLinearGeometry/unstructuredTriangles/base
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const word &, const compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Starting to read mesh format at line 2
+Read format version 2.2  ascii 0
+
+Starting to read physical names at line 5
+Physical names:8
+    Surface 2	front
+    Surface 3	back
+    Surface 4	down
+    Surface 5	right
+    Surface 6	up
+    Surface 7	left
+    Surface 8	hole
+    Volume 1	internal
+
+Starting to read points at line 16
+Vertices to be read: 504
+Vertices read:504
+
+Starting to read cells at line 523
+Cells to be read: 1390
+
+Mapping region 3 to Foam patch 0
+Mapping region 2 to Foam patch 1
+Mapping region 4 to Foam patch 2
+Mapping region 5 to Foam patch 3
+Mapping region 6 to Foam patch 4
+Mapping region 7 to Foam patch 5
+Mapping region 8 to Foam patch 6
+Mapping region 1 to Foam cellZone 0
+Cells:
+    total:444
+    hex  :0
+    prism:444
+    pyr  :0
+    tet  :0
+
+CellZones:
+Zone	Size
+    0	444
+
+Patch 0 gets name back
+Patch 1 gets name front
+Patch 2 gets name down
+Patch 3 gets name right
+Patch 4 gets name up
+Patch 5 gets name left
+Patch 6 gets name hole
+
+--> FOAM Warning : 
+    From Foam::polyMesh::polyMesh(const IOobject &, pointField &&, const cellShapeList &, const faceListList &, const wordList &, const wordList &, const word &, const word &, const wordList &, const bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 646
+    Found 946 undefined faces in mesh; adding to default patch defaultFaces
+Finding faces of patch 0
+Finding faces of patch 1
+Finding faces of patch 2
+Finding faces of patch 3
+Finding faces of patch 4
+Finding faces of patch 5
+Finding faces of patch 6
+
+FaceZones:
+Zone	Size
+
+Writing zone 0 to cellZone internal and cellSet
+End
+

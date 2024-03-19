@@ -17,31 +17,42 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-solidModel     vertexCentredSegregatedLinearGeometry;
+solidModel     vertexCentredLinearGeometry;
 
-vertexCentredSegregatedLinearGeometryCoeffs
+vertexCentredLinearGeometryCoeffs
 {
-    // Maximum number of Newton-Raphson iterations
-    // Set to 1 for linear cases, otherwise the solver may perform a second
-    // iteration
-    nCorrectors     300;
+    // Solution algorithm (implicitCoupled, implicitSegregated, explicit, ...)
+    solutionAlgorithm implicitSegregated;
+
+    // Maximum number of outer iterations
+    // Implicit coupled: Newton-Raphson iterations 
+    // Implicit segregated: fixed-point iterations
+    // Explicit: unused
+    nCorrectors     10000;
+
+    // Implicit segregated : compact or large implicit stencil
+    compactImplicitStencil yes;
 
     // Compact edge discretisation fraction
     zeta            0.0;
 
-    // Tolerance for Newton-Raphson loop
-    // This obviouosly has no effect if nCorrectors is set to 1
+    // Outer loop solution tolerance
+    // Implicit coupled: Newton-Raphson loop tolerance
+    // Implicit segregated: fixed-point loop tolerance
+    // Explicit: unused
     solutionTolerance 1e-6;
 
-    // Write Eigen matrix to disk in Matlab format
+    // Predict displacement field at the start of a time step
+    predictor yes;
+
+    // Implicit: write Eigen matrix to disk in Matlab format
     writeMatlabMatrix no;
 
-    // Scaling of fixed DOF equations
-    //fixedDofScale 1;
+    // Implicit: scaling of fixed DOF equations
+    // fixedDofScale 1;
 
-    // Fraction of compact edge direction gradient used
-    // Must be greater than 0.0 for stability
-    // alpha 0.2;
+    // Residual write-out frequency
+    infoFrequency 100;
 }
 
 

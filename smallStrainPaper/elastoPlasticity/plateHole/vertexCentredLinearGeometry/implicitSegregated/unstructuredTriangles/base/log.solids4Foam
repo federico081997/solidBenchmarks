@@ -1,0 +1,153 @@
+Duplicate entry backward in runtime selection table ddtScheme
+#0	0   libOpenFOAM.dylib                   0x00000001067a5e5c _ZN4Foam5error14safePrintStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE + 64
+#1	1   libsolids4FoamModels.dylib          0x0000000105cebad8 _ZN4Foam2fv9ddtSchemeIdE28addIstreamConstructorToTableINS0_17backwardDdtSchemeIdEEEC2ERKNS_4wordE + 260
+#2	2   libsolids4FoamModels.dylib          0x0000000105d5154c _GLOBAL__sub_I_backwardDdtSchemes.C + 252
+#3	3   dyld                                0x000000018deeda24 ___ZZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateEENK3$_0clEv_block_invoke + 168
+#4	4   dyld                                0x000000018df33328 ___ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv_block_invoke.209 + 340
+#5	5   dyld                                0x000000018df26668 ___ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE_block_invoke + 496
+#6	6   dyld                                0x000000018decd2fc _ZNK5dyld39MachOFile18forEachLoadCommandER11DiagnosticsU13block_pointerFvPK12load_commandRbE + 300
+#7	7   dyld                                0x000000018df256a0 _ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE + 192
+#8	8   dyld                                0x000000018df32e3c _ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv + 516
+#9	9   dyld                                0x000000018dee9b38 _ZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateE + 524
+#10	10  dyld                                0x000000018deeff70 _ZNK5dyld416JustInTimeLoader15runInitializersERNS_12RuntimeStateE + 36
+#11	11  dyld                                0x000000018dee9f24 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 220
+#12	12  dyld                                0x000000018dee9f00 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 184
+#13	13  dyld                                0x000000018deedab0 _ZZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateEENK3$_1clEv + 112
+#14	14  dyld                                0x000000018deea0f0 _ZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateE + 380
+#15	15  dyld                                0x000000018df0f4dc _ZN5dyld44APIs25runAllInitializersForMainEv + 464
+#16	16  dyld                                0x000000018ded1fa0 _ZN5dyld4L7prepareERNS_4APIsEPKN5dyld313MachOAnalyzerE + 3192
+#17	17  dyld                                0x000000018ded0edc start + 1844
+Duplicate entry backward in runtime selection table ddtScheme
+#0	0   libOpenFOAM.dylib                   0x00000001067a5e5c _ZN4Foam5error14safePrintStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE + 64
+#1	1   libsolids4FoamModels.dylib          0x0000000105cf7360 _ZN4Foam2fv9ddtSchemeINS_6VectorIdEEE28addIstreamConstructorToTableINS0_17backwardDdtSchemeIS3_EEEC2ERKNS_4wordE + 260
+#2	2   libsolids4FoamModels.dylib          0x0000000105d515f8 _GLOBAL__sub_I_backwardDdtSchemes.C + 424
+#3	3   dyld                                0x000000018deeda24 ___ZZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateEENK3$_0clEv_block_invoke + 168
+#4	4   dyld                                0x000000018df33328 ___ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv_block_invoke.209 + 340
+#5	5   dyld                                0x000000018df26668 ___ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE_block_invoke + 496
+#6	6   dyld                                0x000000018decd2fc _ZNK5dyld39MachOFile18forEachLoadCommandER11DiagnosticsU13block_pointerFvPK12load_commandRbE + 300
+#7	7   dyld                                0x000000018df256a0 _ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE + 192
+#8	8   dyld                                0x000000018df32e3c _ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv + 516
+#9	9   dyld                                0x000000018dee9b38 _ZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateE + 524
+#10	10  dyld                                0x000000018deeff70 _ZNK5dyld416JustInTimeLoader15runInitializersERNS_12RuntimeStateE + 36
+#11	11  dyld                                0x000000018dee9f24 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 220
+#12	12  dyld                                0x000000018dee9f00 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 184
+#13	13  dyld                                0x000000018deedab0 _ZZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateEENK3$_1clEv + 112
+#14	14  dyld                                0x000000018deea0f0 _ZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateE + 380
+#15	15  dyld                                0x000000018df0f4dc _ZN5dyld44APIs25runAllInitializersForMainEv + 464
+#16	16  dyld                                0x000000018ded1fa0 _ZN5dyld4L7prepareERNS_4APIsEPKN5dyld313MachOAnalyzerE + 3192
+#17	17  dyld                                0x000000018ded0edc start + 1844
+Duplicate entry backward in runtime selection table ddtScheme
+#0	0   libOpenFOAM.dylib                   0x00000001067a5e5c _ZN4Foam5error14safePrintStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE + 64
+#1	1   libsolids4FoamModels.dylib          0x0000000105d0af28 _ZN4Foam2fv9ddtSchemeINS_15SphericalTensorIdEEE28addIstreamConstructorToTableINS0_17backwardDdtSchemeIS3_EEEC2ERKNS_4wordE + 260
+#2	2   libsolids4FoamModels.dylib          0x0000000105d516ac _GLOBAL__sub_I_backwardDdtSchemes.C + 604
+#3	3   dyld                                0x000000018deeda24 ___ZZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateEENK3$_0clEv_block_invoke + 168
+#4	4   dyld                                0x000000018df33328 ___ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv_block_invoke.209 + 340
+#5	5   dyld                                0x000000018df26668 ___ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE_block_invoke + 496
+#6	6   dyld                                0x000000018decd2fc _ZNK5dyld39MachOFile18forEachLoadCommandER11DiagnosticsU13block_pointerFvPK12load_commandRbE + 300
+#7	7   dyld                                0x000000018df256a0 _ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE + 192
+#8	8   dyld                                0x000000018df32e3c _ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv + 516
+#9	9   dyld                                0x000000018dee9b38 _ZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateE + 524
+#10	10  dyld                                0x000000018deeff70 _ZNK5dyld416JustInTimeLoader15runInitializersERNS_12RuntimeStateE + 36
+#11	11  dyld                                0x000000018dee9f24 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 220
+#12	12  dyld                                0x000000018dee9f00 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 184
+#13	13  dyld                                0x000000018deedab0 _ZZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateEENK3$_1clEv + 112
+#14	14  dyld                                0x000000018deea0f0 _ZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateE + 380
+#15	15  dyld                                0x000000018df0f4dc _ZN5dyld44APIs25runAllInitializersForMainEv + 464
+#16	16  dyld                                0x000000018ded1fa0 _ZN5dyld4L7prepareERNS_4APIsEPKN5dyld313MachOAnalyzerE + 3192
+#17	17  dyld                                0x000000018ded0edc start + 1844
+Duplicate entry backward in runtime selection table ddtScheme
+#0	0   libOpenFOAM.dylib                   0x00000001067a5e5c _ZN4Foam5error14safePrintStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE + 64
+#1	1   libsolids4FoamModels.dylib          0x0000000105d27218 _ZN4Foam2fv9ddtSchemeINS_10SymmTensorIdEEE28addIstreamConstructorToTableINS0_17backwardDdtSchemeIS3_EEEC2ERKNS_4wordE + 260
+#2	2   libsolids4FoamModels.dylib          0x0000000105d51758 _GLOBAL__sub_I_backwardDdtSchemes.C + 776
+#3	3   dyld                                0x000000018deeda24 ___ZZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateEENK3$_0clEv_block_invoke + 168
+#4	4   dyld                                0x000000018df33328 ___ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv_block_invoke.209 + 340
+#5	5   dyld                                0x000000018df26668 ___ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE_block_invoke + 496
+#6	6   dyld                                0x000000018decd2fc _ZNK5dyld39MachOFile18forEachLoadCommandER11DiagnosticsU13block_pointerFvPK12load_commandRbE + 300
+#7	7   dyld                                0x000000018df256a0 _ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE + 192
+#8	8   dyld                                0x000000018df32e3c _ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv + 516
+#9	9   dyld                                0x000000018dee9b38 _ZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateE + 524
+#10	10  dyld                                0x000000018deeff70 _ZNK5dyld416JustInTimeLoader15runInitializersERNS_12RuntimeStateE + 36
+#11	11  dyld                                0x000000018dee9f24 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 220
+#12	12  dyld                                0x000000018dee9f00 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 184
+#13	13  dyld                                0x000000018deedab0 _ZZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateEENK3$_1clEv + 112
+#14	14  dyld                                0x000000018deea0f0 _ZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateE + 380
+#15	15  dyld                                0x000000018df0f4dc _ZN5dyld44APIs25runAllInitializersForMainEv + 464
+#16	16  dyld                                0x000000018ded1fa0 _ZN5dyld4L7prepareERNS_4APIsEPKN5dyld313MachOAnalyzerE + 3192
+#17	17  dyld                                0x000000018ded0edc start + 1844
+Duplicate entry backward in runtime selection table ddtScheme
+#0	0   libOpenFOAM.dylib                   0x00000001067a5e5c _ZN4Foam5error14safePrintStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE + 64
+#1	1   libsolids4FoamModels.dylib          0x0000000105d3b174 _ZN4Foam2fv9ddtSchemeINS_6TensorIdEEE28addIstreamConstructorToTableINS0_17backwardDdtSchemeIS3_EEEC2ERKNS_4wordE + 260
+#2	2   libsolids4FoamModels.dylib          0x0000000105d5180c _GLOBAL__sub_I_backwardDdtSchemes.C + 956
+#3	3   dyld                                0x000000018deeda24 ___ZZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateEENK3$_0clEv_block_invoke + 168
+#4	4   dyld                                0x000000018df33328 ___ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv_block_invoke.209 + 340
+#5	5   dyld                                0x000000018df26668 ___ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE_block_invoke + 496
+#6	6   dyld                                0x000000018decd2fc _ZNK5dyld39MachOFile18forEachLoadCommandER11DiagnosticsU13block_pointerFvPK12load_commandRbE + 300
+#7	7   dyld                                0x000000018df256a0 _ZNK5dyld39MachOFile14forEachSectionEU13block_pointerFvRKNS0_11SectionInfoEbRbE + 192
+#8	8   dyld                                0x000000018df32e3c _ZNK5dyld313MachOAnalyzer18forEachInitializerER11DiagnosticsRKNS0_15VMAddrConverterEU13block_pointerFvjEPKv + 516
+#9	9   dyld                                0x000000018dee9b38 _ZNK5dyld46Loader25findAndRunAllInitializersERNS_12RuntimeStateE + 524
+#10	10  dyld                                0x000000018deeff70 _ZNK5dyld416JustInTimeLoader15runInitializersERNS_12RuntimeStateE + 36
+#11	11  dyld                                0x000000018dee9f24 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 220
+#12	12  dyld                                0x000000018dee9f00 _ZNK5dyld46Loader23runInitializersBottomUpERNS_12RuntimeStateERN5dyld35ArrayIPKS0_EE + 184
+#13	13  dyld                                0x000000018deedab0 _ZZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateEENK3$_1clEv + 112
+#14	14  dyld                                0x000000018deea0f0 _ZNK5dyld46Loader38runInitializersBottomUpPlusUpwardLinksERNS_12RuntimeStateE + 380
+#15	15  dyld                                0x000000018df0f4dc _ZN5dyld44APIs25runAllInitializersForMainEv + 464
+#16	16  dyld                                0x000000018ded1fa0 _ZN5dyld4L7prepareERNS_4APIsEPKN5dyld313MachOAnalyzerE + 3192
+#17	17  dyld                                0x000000018ded0edc start + 1844
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 177176c5ff-20210208 OPENFOAM=2012 patch=220610
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Feb 10 2024
+Time   : 21:57:42
+Host   : Philips-MBP.station
+PID    : 9538
+I/O    : uncollated
+Case   : /Users/philipc/code/federico/solidBenchmarks/smallStrainPaper/elastoPlasticity/plateHole/vertexCentredSegregatedLinearGeometry/unstructuredTriangles/base
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const word &, const compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel vertexCentredSegregatedLinearGeometry
+Selecting dynamicFvMesh staticFvMesh
+
+
+--> FOAM FATAL IO ERROR: (openfoam-2012 patch=220610)
+patch 5 not symmetry type. Patch type = patch
+
+file: /Users/philipc/code/federico/solidBenchmarks/smallStrainPaper/elastoPlasticity/plateHole/vertexCentredSegregatedLinearGeometry/unstructuredTriangles/base/0/pointD.boundaryField.left at line 25.
+
+    From Foam::symmetryPointPatchField<Foam::Vector<double>>::symmetryPointPatchField(const pointPatch &, const DimensionedField<Type, pointMesh> &, const dictionary &) [Type = Foam::Vector<double>]
+    in file fields/pointPatchFields/constraint/symmetry/symmetryPointPatchField.C at line 55.
+
+FOAM exiting
+
+ERROR

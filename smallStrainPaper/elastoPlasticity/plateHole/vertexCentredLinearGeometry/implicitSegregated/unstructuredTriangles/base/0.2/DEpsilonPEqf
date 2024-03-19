@@ -9,43 +9,55 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       dictionary;
-    object      changeDictionaryDict;
+    class       surfaceScalarField;
+    location    "0.2";
+    object      DEpsilonPEqf;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-boundary
+dimensions      [0 0 0 0 0 0 0];
+
+
+internalField   uniform 0;
+
+boundaryField
 {
-    front
-    {
-        type empty;
-        physicalType empty;
-    }
     back
     {
-        type empty;
-        physicalType empty;
+        type            empty;
+        value           nonuniform List<scalar> 0();
+    }
+    front
+    {
+        type            empty;
+        value           nonuniform List<scalar> 0();
     }
     down
     {
-        type symmetry;
-        physicalType symmetry;
+        type            symmetry;
+        value           uniform 0;
+    }
+    right
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    up
+    {
+        type            calculated;
+        value           uniform 0;
     }
     left
     {
-        type symmetry;
-        physicalType symmetry;
+        type            symmetry;
+        value           uniform 0;
     }
-    down
+    hole
     {
-        type patch;
-        physicalType patch;
-    }
-    left
-    {
-        type patch;
-        physicalType patch;
+        type            calculated;
+        value           uniform 0;
     }
 }
+
 
 // ************************************************************************* //
