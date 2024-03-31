@@ -1,0 +1,93 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 177176c5ff-20210208 OPENFOAM=2012 patch=220610
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary
+Date   : Feb 10 2024
+Time   : 21:57:42
+Host   : Philips-MBP.station
+PID    : 9537
+I/O    : uncollated
+Case   : /Users/philipc/code/federico/solidBenchmarks/smallStrainPaper/elastoPlasticity/plateHole/vertexCentredSegregatedLinearGeometry/unstructuredTriangles/base
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const word &, const compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Create mesh for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 7(back front down right up left hole)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 4(front back down left)
+fieldDict:
+{
+    back
+    {
+        type            empty;
+        physicalType    empty;
+        nFaces          444;
+        startFace       637;
+    }
+    front
+    {
+        type            empty;
+        physicalType    empty;
+        nFaces          444;
+        startFace       1081;
+    }
+    down
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          15;
+        startFace       1525;
+    }
+    right
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          10;
+        startFace       1540;
+    }
+    up
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          20;
+        startFace       1550;
+    }
+    left
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          5;
+        startFace       1570;
+    }
+    hole
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          8;
+        startFace       1575;
+    }
+}
+
+Writing modified boundary
+
+End
+

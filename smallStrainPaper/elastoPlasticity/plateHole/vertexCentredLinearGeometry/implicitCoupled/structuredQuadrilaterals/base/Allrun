@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Source solids4Foam scripts
+source solids4FoamScripts.sh
+
+# We can create the mesh using blockMesh or gmsh
+
+# Create mesh using blockMesh
+solids4Foam::runApplication blockMesh
+
+# Create mesh using gmsh
+#solids4Foam::runApplication gmsh -3 -format msh2 plateHole.geo
+#solids4Foam::runApplication gmshToFoam plateHole.msh
+#solids4Foam::runApplication changeDictionary
+
+# Run solver
+solids4Foam::runApplication solids4Foam
+

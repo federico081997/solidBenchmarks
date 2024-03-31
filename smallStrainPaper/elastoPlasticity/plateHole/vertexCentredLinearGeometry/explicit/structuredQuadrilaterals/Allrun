@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Source solids4Foam scripts
+source solids4FoamScripts.sh
+
+SUFFIX="mesh"
+
+BASE="base"
+
+if [[ -d "${SUFFIX}.1" ]]
+then
+    echo "Case ${SUFFIX}.1 already exists: please remove it"; echo
+    exit 1;
+fi
+
+# Run cases
+for i in `seq 1 4`;
+do
+    CASE="${SUFFIX}.$i"
+    echo "Running ${CASE}"
+
+    # Copy template case
+    cp -r "${BASE}" "${CASE}"
+
+    # Enter the case
+    cd "${CASE}"
+
+    # Set the blockMeshDict
+    cp system/blockMeshDict.$i system/blockMeshDict
+
+    # Run the case
+    ./Allrun &> log.Allrun
+
+    # Navigate back to the parent directory
+    cd ..
+done
+
+# Extract the results
+# echo "Running Allpost"
+# ./Allpost
