@@ -1,0 +1,64 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| solids4foam: solid mechanics and fluid-solid interaction simulations        |
+| Version:     v2.0                                                           |
+| Web:         https://solids4foam.github.io                                  |
+| Disclaimer:  This offering is not approved or endorsed by OpenCFD Limited,  |
+|              producer and distributor of the OpenFOAM software via          |
+|              www.openfoam.com, and owner of the OPENFOAM® and OpenCFD®      |
+|              trade marks.                                                   |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      solidProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solidModel     vertexCentredLinearGeometry;
+
+vertexCentredLinearGeometryCoeffs
+{
+    // Solution algorithm (implicitCoupled, implicitSegregated, explicit, ...)
+    solutionAlgorithm implicitCoupled;
+
+    // Maximum number of outer iterations
+    // Implicit coupled: Newton-Raphson iterations 
+    // Implicit segregated: fixed-point iterations
+    // Explicit: unused
+    nCorrectors     100;
+
+    // Implicit coupled: update the stiffness matrix each outer iteration
+    fullNewton yes;
+
+    // Compact edge discretisation fraction
+    zeta            0.0;
+
+    // Outer loop solution tolerance
+    // Implicit coupled: Newton-Raphson loop tolerance
+    // Implicit segregated: fixed-point loop tolerance
+    // Explicit: unused
+    solutionTolerance 1e-6;
+
+    // Predict displacement field at the start of a time step
+    predictor yes;
+
+    // Residual write-out frequency
+    infoFrequency 1;
+
+    // Line search settings
+    lineSearch no;
+    lineSearchRTol 0.5;
+
+    // Implicit coupled: linear solver
+    usePETSc yes;
+    optionsFile petscOptions.mumps;
+    //optionsFile petscOptions.hypre;
+    //optionsFile petscOptions.cg;
+    debugPETSc no;
+}
+
+
+// ************************************************************************* //
